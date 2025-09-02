@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.product-card {
+  @apply max-w-72 relative border border-gray-200 p-4 bg-blue-200 shadow-xl hover:scale-105 transition ease-in-out duration-300;
+}
+
+.product-card img {
+  @apply w-full h-48 object-contain bg-white/40 z-10;
+}
+
+.product-card h2 {
+  @apply text-lg font-semibold mt-2;
+}
+
+.product-card h3 {
+  @apply text-lg font-light mt-1;
+}
+
+.product-card p {
+  @apply absolute top-4 right-3 z-20 bg-blue-200 p-1
+}
+
+.product-card button {
+  @apply mt-4 w-full py-2 px-4 text-white font-semibold shadow-md;
+}

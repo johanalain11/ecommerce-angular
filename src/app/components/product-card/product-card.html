@@ -1,0 +1,13 @@
+<div class="product-card primary-hover">
+  <img [src]="product().image" alt="{{ product().title }}" />
+  <h2>{{ product().title }}</h2>
+  <h3>Prix: {{ product().price }} Fcfa</h3>
+  <p>
+    @if (product().stock) {
+      <span>Disponible(s): {{ product().stock }}</span>
+    } @else {
+      <span class="text-white bg-red-600 p-1 font-bold">Indisponible</span>
+    }
+  </p>
+  <button class="primary-hover" [class]="product().stock ? '': 'opacity-40 cursor-not-allowed'">Ajouter au panier</button>
+</div>

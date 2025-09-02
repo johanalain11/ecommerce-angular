@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fbbf24;
+  --color-primary: #007ac0;
+  --color-primary-dark: #005ea2;
+  --color-secondary: #f7a800;
+  --color-secondary-dark: #91670d;
+}
+
+.primary-button {
+  @apply bg-secondary hover:bg-primary text-white font-bold py-2 px-4 h-fit transition ease-in-out duration-500;
+}
+
+.primary-hover {
+  @apply bg-primary hover:bg-primary-dark transition ease-in-out duration-500;
+}
+
+.secondary-hover {
+  @apply bg-secondary hover:bg-secondary-dark transition ease-in-out duration-500;
+}
