@@ -1,9 +1,9 @@
 <nav>
-  <div class="container mx-auto px-4 py-2">
+  <div class="container px-4 py-2 cursor-pointer w-fit" routerLink="/">
     <img src="logo2.png" alt="Ecommerce App Logo" class="h-12">
     <h1 class="text-2xl xl:text-3xl font-bold text-cyan-500">Ecommerce App</h1>
   </div>
-  <button class="primary-button">
-    Panier
+  <button class="primary-button" routerLink="/cart">
+    Panier ({{ CartService.cart().length }})
   </button>
 </nav>

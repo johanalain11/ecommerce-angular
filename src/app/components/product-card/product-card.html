@@ -9,5 +9,5 @@
       <span class="text-white bg-red-600 p-1 font-bold">Indisponible</span>
     }
   </p>
-  <button class="primary-hover" [class]="product().stock ? '': 'opacity-40 cursor-not-allowed'">Ajouter au panier</button>
+  <button class="primary-hover" [class]="product().stock ? '': 'opacity-40 cursor-not-allowed'" (click)="product().stock && CartService.addToCart(product())">Ajouter au panier</button>
 </div>
