@@ -9,5 +9,10 @@
       <span class="text-white bg-red-600 p-1 font-bold">Indisponible</span>
     }
   </p>
-  <button class="primary-hover" [class]="product().stock ? '': 'opacity-40 cursor-not-allowed'" (click)="product().stock && CartService.addToCart(product())">Ajouter au panier</button>
+  <button class="primary-hover" [class]="product().stock ? '': 'opacity-40 cursor-not-allowed'" (click)="product().stock && CartService.addToCart(product()); showTooltip()">Ajouter au panier</button>
+  @if (isTooltipVisible) {
+    <div class="fixed bottom-12 left-1/2 -translate-x-1/2 bg-green-600 z-50 text-white px-4 py-2 rounded shadow-lg animate-fade">
+      Ajouté !
+    </div>
+  }
 </div>

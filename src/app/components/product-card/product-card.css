@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@keyframes fade {
+  0% { opacity: 0; transform: translateY(-10px)}
+  20% { opacity: 1; transform: translateY(0)}
+  80% { opacity: 1}
+  100% { opacity: 0; transform: translateY(-10px)}
+}
+
+.animate-fade {
+  animation: fade 1s forwards;
+}
+
 .product-card {
   @apply max-w-72 relative border border-gray-200 p-4 bg-blue-200 shadow-xl hover:scale-105 transition ease-in-out duration-300;
 }

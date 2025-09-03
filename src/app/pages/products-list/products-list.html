@@ -2,4 +2,7 @@
   @for (product of products(); track product.id) {
     <app-product-card [product]="product"></app-product-card>
   }
+  @empty {
+    <p>Aucun produit disponible</p>
+  }
 </div>

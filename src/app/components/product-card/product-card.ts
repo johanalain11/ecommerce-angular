@@ -12,4 +12,14 @@ import { Cart } from '../../services/cart';
 export class ProductCard {
   product = input.required<Product>();
   CartService = inject(Cart);
+
+  // Animation lors de l'ajout d'un article au panier
+  isTooltipVisible = false;
+
+  showTooltip() {
+    this.isTooltipVisible = true;
+    setTimeout(() => {
+      this.isTooltipVisible = false;
+    }, 1000);
+  }
 }

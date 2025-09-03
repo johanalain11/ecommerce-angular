@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 nav {
-  @apply w-full flex justify-between items-center px-10 bg-gray-300 text-white shadow-xl;
+  @apply w-full flex sticky z-30 top-0 justify-between items-center px-10 bg-gray-300 text-white shadow-xl;
 }
 
 .container {
