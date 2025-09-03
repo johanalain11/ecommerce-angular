@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.order-summary {
+  @apply bg-amber-200 p-4 shadow-md space-y-3;
+}
+.order-summary h3 {
+  @apply text-lg font-bold;
+}
+
+.order-summary p {
+  @apply text-gray-700;
+}
