@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.card-list {
+  @apply mx-28 my-10;
+}
+h2 {
+  @apply text-4xl font-bold mb-6;
+}

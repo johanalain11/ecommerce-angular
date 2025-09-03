@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+.cart-item {
+  @apply flex justify-between p-4 shadow-md mb-3;
+}
+.cart-item div {
+  @apply flex gap-4;
+}
+img {
+  @apply w-20 h-20 object-contain;
+}
+h2 {
+  @apply text-xl font-bold;
+}

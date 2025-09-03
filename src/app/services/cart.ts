@@ -11,4 +11,10 @@ export class Cart {
   addToCart(product: Product) {
     this.cart.update(current => [...current, product]);
   }
+  removeFromCart(productId: number) {
+    this.cart.update(current => current.filter(item => item.id !== productId));
+  }
+  clearCart() {
+    this.cart.set([]);
+  }
 }
