@@ -1,59 +1,135 @@
-# EcommerceAngular
+# ✅ Projet Ecommerce App (Angular + TailwindCSS)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+![Angular](https://img.shields.io/badge/Angular-20-red?style=for-the-badge&logo=angular) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Design-38B2AC?style=for-the-badge&logo=tailwind-css) ![TypeScript](https://img.shields.io/badge/TypeScript-Lang-blue?style=for-the-badge&logo=typescript) ![Node.js](https://img.shields.io/badge/Node.js-22-green?style=for-the-badge&logo=node.js) ![MIT License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge) ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
-## Development server
+---
 
-To start a local development server, run:
+## 📖 Description
+**Ecommerce App** est une application construite avec **Angular** et **TailwindCSS**.  
+Elle permet de :
+- Récupérer et afficher une liste de produits depuis l’API publique **FakeStoreAPI**,
+- Ajouter des produits au panier,
+- Accéder à une page **Panier** avec la liste des articles sélectionnés,
+- Générer un **résumé du panier** (quantité totale et prix total). 
 
-```bash
+---
+
+## 🚀 Fonctionnalités
+
+![Fonctionnalités](./public/features.png "Fonctionnalités TodoApp")
+
+#### ✅ Consommation de l’API [FakeStoreAPI](https://fakestoreapi.com/products)  
+#### ✅ Page **Liste des Produits** avec bouton *Ajouter au Panier*
+#### ✅ Gestion du **panier** avec un **service Angular**  
+#### ✅ Affichage d’un **résumé du panier** (nombre d’articles + total)  
+#### ✅ Styles modernes avec **TailwindCSS** 
+
+---
+
+## 🛠️ Technologies utilisées
+- 🅰️ **Angular** - Framework principal
+- 🎨 **TailwindCSS** - Système de styles utilitaire
+- 🟦 **TypeScript** - Langage utilisé pour Angular
+- 🌐 **FakeStoreAPI** - Source de données pour les produits 
+- ⚡ **Node.js (22)** — Environnement 
+
+---
+
+## 📦 Installation et Utilisation
+
+### 1️⃣ Cloner le projet
+```sh
+git clone https://github.com/ton-profil/todoapp.git
+cd ecommerce-app
+
+```
+
+### 2️⃣ Installer les dépendances
+```sh
+npm install
+```
+
+### 3️⃣ Lancer l’application Angular
+```sh
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+➡️ Ouvrir dans le navigateur 👉 [http://localhost:4200](http://localhost:4200)
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+## 📂 Structure du projet
 ```bash
-ng generate component component-name
+/todoapp
+├── /src
+│   ├── /app
+│   │   ├── /components # Dossier des composants
+│   │   ├── /models     # Dossier des modèles: définition de la structure d'un produit
+│   │   ├── /pages      # Dossier des pages du site
+│   │   ├── /services   # Dossier des services
+│   │   ├── app.config.ts
+│   │   ├── app.css
+│   │   ├── app.html
+│   │   ├── app.routes.ts
+│   │   ├── app.spec.ts
+│   │   └── app.ts
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── .postcssrc.json
+├── angular.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🎨 Aperçu de l'Interface
+- Page de Produits
+![Interface](./public/apercu.png "Interface de l'application")
 
-## Building
+- Page du panier
+![Interface](./public/apercu1.png "Interface de l'application")
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📊 Exemple d’Utilisation
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1. L’application récupère la liste des produits depuis https://fakestoreapi.com/products
+2. L’utilisateur ajoute un produit au panier
+3. Il est redirigé vers la page Panier
+4. La page Panier affiche :
+  - ✅ Liste des articles sélectionnés
+  - ✅ Quantité totale
+  - ✅ Prix total
 
-## Running unit tests
+----------
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🔮 Améliorations Futures
 
-```bash
-ng test
-```
+> [!NOTE]
+> 
+> -   Améliorer la gestion du panier en définissant ses éléments indépendament des id de produit
+> -   Ajouter une authentification (connexion/inscription)
+> -   Gérer le paiement (simulation Stripe ou PayPal)
+> -   Filtrer et trier les produits (prix, catégorie, popularité)
+> -   Déployer une version en ligne (Netlify / Vercel + API hébergée)
+> -   Améliorer le design avec des composants plus dynamiques (animations, toasts, etc.)
+>     
+----------
 
-## Running end-to-end tests
+## Auteur
+**Johan Alain**
 
-For end-to-end (e2e) testing, run:
+[GitHub](https://github.com/johanalain11/)
 
-```bash
-ng e2e
-```
+## 📜 Licence
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Ce projet est sous licence MIT.
 
-## Additional Resources
+----------
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+✨ **N’hésite pas à contribuer !**  
+💡 **Suggestions et retours sont les bienvenus !** 😊  
+📩 **Contact :** [LinkedIn](www.linkedin.com/in/johanalain11) | Email [jank092016@gmail.com](mailto:jank092016@gmail.com)

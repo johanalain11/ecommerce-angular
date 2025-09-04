@@ -3,6 +3,7 @@ import { Component, inject, signal } from '@angular/core';
 import { ProductCard } from '../../components/product-card/product-card';
 import { Products } from '../../services/products';
 import axios from 'axios';
+import { Footer } from '../../components/footer/footer';
 
 @Component({
   selector: 'app-products-list',

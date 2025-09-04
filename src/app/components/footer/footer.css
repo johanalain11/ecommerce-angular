@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.footer {
+  @apply bg-gray-900 text-white py-4 relative bottom-0 w-full mt-10;
+}
+.footer a {
+  @apply text-white hover:underline;
+}
